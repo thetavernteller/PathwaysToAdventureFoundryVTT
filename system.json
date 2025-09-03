@@ -1,5 +1,5 @@
 {
-  "id": "pathways_to_adventure",
+  "id": "PathwaysToAdventureFoundryVTT",
   "title": "Pathways To Adventure",
   "description": "A fully coded implementation for Pathways To Adventure (PTA) to use on FoundryVTT.",
   "version": "1.0.0",
@@ -13,7 +13,7 @@
     "email": "thetavernteller@gmail.com",
     "discord": "TheTavernTeller"
   }],
-  "esmodules": ["pathways_to_adventure.mjs"],
+  "esmodules": ["PathwaysToAdventureFoundryVTT.mjs"],
   "styles": ["styles/system-styles.css"],
   "packs": [{
     "name": "monsters",
@@ -24,7 +24,12 @@
     "name": "items",
     "label": "My Items",
     "type": "Item"
-  }],
+  },
+{
+    "name": "characters",
+    "label": "Player Characters",
+    "type": "Actor"
+}],
   "languages": [{
     "lang": "en",
     "name": "English",
@@ -49,6 +54,6 @@
   },
   "primaryTokenAttribute": "resources.health",
   "url": "https://github.com/thetavernteller/PathwaysToAdventureFoundryVTT",
-  "manifest": "https://your/hosted/system/repo/system.json",
+  "manifest": "https://github.com/thetavernteller/PathwaysToAdventureFoundryVTT/blob/main/system.json",
   "download": "https://your/packaged/download/archive.zip"
 }
