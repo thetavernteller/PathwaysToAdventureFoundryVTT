@@ -1,58 +1,45 @@
 {
-  "id": "PathwaysToAdventureFoundryVTT",
+  "id": "pta",
+  
   "title": "Pathways To Adventure",
+  
   "description": "A fully coded implementation for Pathways To Adventure (PTA) to use on FoundryVTT.",
-  "version": "1.0.0",
+  
+  "version": "0.0.1",
+  
   "compatibility": {
     "minimum": 12,
     "verified": 12
   },
+
   "authors": [{
     "name": "TheTavernTeller",
     "url": "https://startplaying.games/gm/thetavernteller",
     "email": "thetavernteller@gmail.com",
     "discord": "TheTavernTeller"
   }],
-  "esmodules": ["PathwaysToAdventureFoundryVTT.mjs"],
-  "styles": ["styles/system-styles.css"],
-  "packs": [{
-    "name": "monsters",
-    "label": "My Monsters",
-    "type": "Actor"
-  },
-  {
-    "name": "items",
-    "label": "My Items",
-    "type": "Item"
-  },
-{
-    "name": "characters",
-    "label": "Player Characters",
-    "type": "Actor"
-}],
+
+  "esmodules": [
+    "pta.js"
+  ],
+
+ "styles": [
+    "pta.css"
+  ],
+
   "languages": [{
     "lang": "en",
     "name": "English",
     "path": "lang/en.json"
   }],
-  "documentTypes": {
-    "Actor": {
-      "hero": { "htmlFields": ["background.biography"] },
-      "villain": { "htmlFields": ["background.biography"] },
-      "pawn": {}
-    },
-    "Item": {
-      "weapon": {},
-      "spell": {}
-    }
-  },
+
   "socket": false,
   "initiative": "1d6",
   "grid": {
     "distance": 1,
-    "units": "Square"
+    "units": "meter"
   },
-  "primaryTokenAttribute": "resources.health",
+
   "url": "https://github.com/thetavernteller/PathwaysToAdventureFoundryVTT",
   "manifest": "https://github.com/thetavernteller/PathwaysToAdventureFoundryVTT/blob/main/system.json",
   "download": "https://your/packaged/download/archive.zip"
